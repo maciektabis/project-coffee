@@ -25,7 +25,6 @@
 
 	.header img {
 		object-fit: cover;
-		//width: 100%;
 		height: 600px;
 	}
 
@@ -143,4 +142,115 @@
 
 .icon-arrow {
 	font-size: 30px;
+}
+
+.section-title h2 {
+	color: $color-main;
+	text-align: center;
+	letter-spacing: 8px;
+	font-size: 40px;
+	font-weight: $font-bold;
+}
+.section-title h2:after {
+	position: absolute;
+	content: '';
+	bottom: -215px;
+	left: 50%;
+	width: 600px;
+	height: 5px;
+	transform: translateX(-50%);
+	background: $color-main;
+}
+.container_products {
+	margin: 25px 0;
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+	flex-wrap: wrap;
+	font-family: $font-main;
+}
+.row {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	grid-gap: 100px;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+.products-description {
+	.properties {
+		font-size: 20px;
+		font-weight: bold;
+		margin-top: 50px;
+		p {
+			margin-bottom: -5px;
+			font-size: 20px;
+		}
+
+		span {
+			color: $color-main;
+		}
+	}
+	.description {
+		font-size: 16px;
+		position: relative;
+		padding-left: 130px;
+		margin-bottom: 10px;
+	}
+	.description::after {
+		position: absolute;
+		content: '';
+		top: 10px;
+		left: 60px;
+		width: 100px;
+		height: 5px;
+		transform: translateX(-50%);
+		background: $color-main;
+	}
+}
+.products-title {
+	font-size: 30px;
+	font-weight: $font-semibold;
+}
+
+.about-us {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+		url('../images/about-us.jpg');
+	background-size: cover;
+	color: $color-light;
+	height: 800px;
+	position: relative;
+}
+
+.about-us img {
+	padding-top: 200px;
+}
+.carousel {
+	height: 100vh;
+}
+.carousel-control-prev-icon {
+	padding-top: 600px;
+}
+.about-us-title h2 {
+	color: $color-main;
+	text-align: center;
+	letter-spacing: 8px;
+	font-size: 40px;
+	font-weight: $font-bold;
+}
+.about-us-title h2:after {
+	position: absolute;
+	content: '';
+	bottom: 700px;
+	left: 50%;
+	width: 600px;
+	height: 5px;
+	transform: translateX(-50%);
+	background: $color-main;
+}
+
+.carousel-item p {
+	float: right;
+	font-family: $font-main;
+	font-size: 20px;
 }
