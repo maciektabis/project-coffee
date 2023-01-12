@@ -111,59 +111,77 @@
 				</div>
 			</div>
 			<section class="about-us">
-				<div class="container">
+				<div class="about-us-container">
 					<div class="about-us-title mt-4">
 						<h2>ABOUT US</h2>
 					</div>
-					<div class="carousel slide">
+					<div id="carousel" class="carousel slide" data-bs-ride="carousel">
 						<div class="carousel-inner">
 							<div class="carousel-item active">
-								<img
-									src="./images/1.png"
-									class="d-inline-block mt-4"
-									alt="..."
-								/>
-								<p>
-									Experienced barista from Bahamas. She says that Venezuela has
-									opened eyes on coffee. "It's not about the taste", she says.
-									"It's all about the feelings".
-								</p>
+								<div>
+									<img src="./images/1.png" class="d-inline-block mt-4" />
+									<h4>Ping Nihao</h4>
+									<p>
+										Ping is the youngest in the team. He doesn't like calling
+										coffee a mysterious act. He says, a good coffee is like a
+										mathematical formula. Once you figured it out, every coffee
+										you make is a masterpiece.
+									</p>
+								</div>
 							</div>
 
 							<div class="carousel-item">
-								<img src="./images/2.png" class="d-block w-100" alt="..." />
+								<div>
+									<img src="./images/2.png" class="d-inline-block mt-4" />
+									<h4>Max Selfish</h4>
+									<p>
+										Max is the austrian barista with years of experience from
+										the hotels across the whole Europe. "Venezuela coffee was a
+										lifhtening experience for me! I have never drink such an
+										amazing coffee!", he says.
+									</p>
+								</div>
 							</div>
+
 							<div class="carousel-item">
-								<img src="..." class="d-block w-100" alt="..." />
+								<div>
+									<img src="./images/3.png" class="d-inline-block mt-4" />
+									<h4>Elizabeth Doherty</h4>
+									<p>
+										Experienced barista from Bahamas. She says that Venezuela
+										has opened eyes on coffee. "It's not about the taste", she
+										says. "It's all about the feelings".
+									</p>
+								</div>
 							</div>
 						</div>
-						<button
-							class="carousel-control-prev"
-							type="button"
-							data-bs-target="#carouselExample"
-							data-bs-slide="prev"
-						>
-							<span
-								class="carousel-control-prev-icon"
-								aria-hidden="true"
-							></span>
-						</button>
-						<button
-							class="carousel-control-next"
-							type="button"
-							data-bs-target="#carouselExample"
-							data-bs-slide="next"
-						>
-							<span
-								class="carousel-control-next-icon"
-								aria-hidden="true"
-							></span>
-						</button>
 					</div>
+					<button
+						class="carousel-control-prev"
+						type="button"
+						data-bs-target="#carousel"
+						data-bs-slide="prev"
+					>
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					</button>
+					<button
+						class="carousel-control-next"
+						type="button"
+						data-bs-target="#carousel"
+						data-bs-slide="next"
+					>
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					</button>
 				</div>
 			</section>
 		</section>
 		<footer></footer>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+			crossorigin="anonymous"
+		></script>
+
 		<script src="js/script.js" type="module"></script>
 	</body>
 </html>
