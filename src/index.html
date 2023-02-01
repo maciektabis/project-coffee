@@ -54,74 +54,77 @@
 				</div>
 			</div>
 		</header>
-		<section class="products">
-			<div class="container_products mt-5">
-				<div class="section-title">
-					<h2>PRODUCTS</h2>
-				</div>
-				<div class="row">
-					<div class="col-6 col-md-4 products-description mt-5">
-						<h3 class="products-title">01. LA LAGARTIJA</h3>
-						<p class="description">
-							Mysterious and treacherous... The best choice for the start of
-							your journey! It will provide you a rich delicious flavor.
-						</p>
-						<div class="properties">
-							<p>ROASTING: <span>5/10</span></p>
-							<p>INTENSITY: <span>6/10</span></p>
+		<div id="app"></div>
+		<script id="template-home-page" type="text/x-handlebars-template">
+			<section class='products'>
+				<div class='container_products mt-5'>
+					<div class='section-title'>
+						<h2>PRODUCTS</h2>
+					</div>
+					<div class='row'>
+						<div class='col-6 col-md-4 products-description mt-5'>
+							<h3 class='products-title'>01. LA LAGARTIJA</h3>
+							<p class='description'>
+								Mysterious and treacherous... The best choice for the start of
+								your journey! It will provide you a rich delicious flavor.
+							</p>
+							<div class='properties'>
+								<p>ROASTING: <span>5/10</span></p>
+								<p>INTENSITY: <span>6/10</span></p>
+							</div>
+						</div>
+						<div class='col-6 col-md-4 products-image mt-5'>
+							<img src='./images/coffee-1.png' alt='coffee beans ' />
 						</div>
 					</div>
-					<div class="col-6 col-md-4 products-image mt-5">
-						<img src="./images/coffee-1.png" alt="coffee beans " />
+					<div class='row'>
+						<div class='col-4 col-md-4 products-image'>
+							<img src='./images/coffee-2.png' alt='Tiger and coffee beans ' />
+						</div>
+						<div class='col-4 products-description'>
+							<h3 class='products-title'>02. EL TIGRE</h3>
+							<p class='description'>
+								Really dark coffe, only for the real gourmets. It has bitter
+								flavor of grapefuits and is mixed with a little bit of peanuts
+								with caramel.
+							</p>
+							<div class='properties'>
+								<p>ROASTING: <span>8/10</span></p>
+								<p>INTENSITY: <span>9/10</span></p>
+							</div>
+						</div>
 					</div>
-				</div>
-				<div class="row">
-					<div class="col-4 col-md-4 products-image">
-						<img src="./images/coffee-2.png" />
-					</div>
-					<div class="col-4 products-description">
-						<h3 class="products-title">02. EL TIGRE</h3>
-						<p class="description">
-							Really dark coffe, only for the real gourmets. It has bitter
-							flavor of grapefuits and is mixed with a little bit of peanuts
-							with caramel.
-						</p>
-						<div class="properties" alt="Tiger and coffee beans ">
-							<p>ROASTING: <span>8/10</span></p>
-							<p>INTENSITY: <span>9/10</span></p>
+					<div class='row'>
+						<div class='col-6 col-md-4 products-description'>
+							<h3 class='products-title'>03. LA CUCARACHA</h3>
+							<p class='description'>
+								Sweet and intense with a big amount of different flavors.
+								Caramel, grapes, strawberry, you name it! It's great choice for
+								warm summer days
+							</p>
+							<div class='properties'>
+								<p>ROASTING: <span>3/10</span></p>
+								<p>INTENSITY: <span>7/10</span></p>
+							</div>
+						</div>
+						<div class='col-6 col-md-4 products-image'>
+							<img src='./images/coffee-3.png' alt='nuts on green background' />
 						</div>
 					</div>
 				</div>
-				<div class="row">
-					<div class="col-6 col-md-4 products-description">
-						<h3 class="products-title">03. LA CUCARACHA</h3>
-						<p class="description">
-							Sweet and intense with a big amount of different flavors. Caramel,
-							grapes, strawberry, you name it! It's great choice for warm summer
-							days
-						</p>
-						<div class="properties">
-							<p>ROASTING: <span>3/10</span></p>
-							<p>INTENSITY: <span>7/10</span></p>
-						</div>
-					</div>
-					<div class="col-6 col-md-4 products-image">
-						<img src="./images/coffee-3.png" alt="nuts on green background" />
-					</div>
-				</div>
-			</div>
-			<section class="about-us">
-				<div class="about-us-container">
-					<div class="about-us-title mt-4">
+			</section>
+			<section class='about-us'>
+				<div class='about-us-container'>
+					<div class='about-us-title mt-4'>
 						<h2>ABOUT US</h2>
 					</div>
-					<div id="carousel" class="carousel slide" data-bs-ride="carousel">
-						<div class="carousel-inner">
-							<div class="carousel-item active">
+					<div id='carousel' class='carousel slide' data-bs-ride='carousel'>
+						<div class='carousel-inner'>
+							<div class='carousel-item active'>
 								<div>
 									<h4>Ping Nihao</h4>
 
-									<img src="./images/1.png" class="d-inline-block mt-4" />
+									<img src='./images/1.png' class='d-inline-block mt-4' />
 									<p>
 										Ping is the youngest in the team. He doesn't like calling
 										coffee a mysterious act. He says, a good coffee is like a
@@ -131,11 +134,11 @@
 								</div>
 							</div>
 
-							<div class="carousel-item">
+							<div class='carousel-item'>
 								<div>
 									<h4>Max Selfish</h4>
 
-									<img src="./images/2.png" class="d-inline-block mt-4" />
+									<img src='./images/2.png' class='d-inline-block mt-4' />
 									<p>
 										Max is the austrian barista with years of experience from
 										the hotels across the whole Europe. "Venezuela coffee was a
@@ -145,10 +148,10 @@
 								</div>
 							</div>
 
-							<div class="carousel-item">
+							<div class='carousel-item'>
 								<div>
 									<h4>Elizabeth Doherty</h4>
-									<img src="./images/3.png" class="d-inline-block mt-4" />
+									<img src='./images/3.png' class='d-inline-block mt-4' />
 
 									<p>
 										Experienced barista from Bahamas. She says that Venezuela
@@ -160,25 +163,261 @@
 						</div>
 					</div>
 					<button
-						class="carousel-control-prev"
-						type="button"
-						data-bs-target="#carousel"
-						data-bs-slide="prev"
+						class='carousel-control-prev'
+						type='button'
+						data-bs-target='#carousel'
+						data-bs-slide='prev'
 					>
-						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class='carousel-control-prev-icon' aria-hidden='true'></span>
 					</button>
 					<button
-						class="carousel-control-next"
-						type="button"
-						data-bs-target="#carousel"
-						data-bs-slide="next"
+						class='carousel-control-next'
+						type='button'
+						data-bs-target='#carousel'
+						data-bs-slide='next'
 					>
-						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class='carousel-control-next-icon' aria-hidden='true'></span>
+					</button>
+				</div>
+
+			</section>
+			<footer>
+				<div class='bottom-footer'>
+					<h6>® 2021 EL TIGRE Inc.</h6>
+				</div>
+			</footer>
+		</script>
+		<script id="template-products-page" type="text/x-handlebars-template">
+			<section class='products'>
+				<div class='container_products'>
+					<div class='section-title col-12'>
+						<h2>PRODUCTS</h2>
+					</div>
+
+					<div class='row'>
+						<div class='col-6 col-md-4 products-description'>
+							<h3 class='products-title'>01. LA LAGARTIJA</h3>
+							<p class='description'>
+								Mysterious and treacherous... The best choice for the start of
+								your journey! It will provide you a rich delicious flavor
+							</p>
+							<div class='properties'>
+								<p>ROASTING: <span>5/10</span></p>
+								<p>INTENSITY: <span>6/10</span></p>
+							</div>
+						</div>
+						<div class='col-6 col-md-4 products-image'>
+							<img src='./images/coffee-1.png' alt='coffee beans' />
+						</div>
+					</div>
+
+					<div class='row'>
+						<div class='col-6 col-md-4 products-image'>
+							<img src='./images/coffee-2.png' alt='Tiger and coffee beans ' />
+						</div>
+						<div class='col-6 col-md-6 products-description'>
+							<h3 class='products-title'>02. EL TIGRE</h3>
+							<p class='description'>
+								Really dark coffe, only for the real gourmets. It has bitter
+								flavor of grapefuits and is mixed with a little bit of peanuts
+								with caramel.
+							</p>
+							<div class='properties'>
+								<p>ROASTING: <span>8/10</span></p>
+								<p>INTENSITY: <span>9/10</span></p>
+							</div>
+						</div>
+					</div>
+
+					<div class='row'>
+						<div class='col-6 col-md-4 products-description'>
+							<h3 class='products-title'>03. LA CUCARACHA</h3>
+							<p class='description'>
+								Sweet and intense with a big amount of different flavors.
+								Caramel, grapes, strawberry, you name it! It's great choice for
+								warm summer days
+							</p>
+							<div class='properties'>
+								<p>ROASTING: <span>3/10</span></p>
+								<p>INTENSITY: <span>7/10</span></p>
+							</div>
+						</div>
+						<div class='col-6 col-md-4 products-image'>
+							<img src='./images/coffee-3.png' alt='nuts on green background' />
+						</div>
+					</div>
+				</div>
+			</section>
+			<footer>
+				<div class='bottom-footer'>
+					<h6>® 2021 EL TIGRE Inc.</h6>
+				</div>
+			</footer>
+		</script>
+		<!-- About us -->
+		<script id="template-about-us-page" type="text/x-handlebars-template">
+			<section class='about-us'>
+				<div class='about-us-container'>
+					<div class='about-us-title mt-4'>
+						<h2>ABOUT US</h2>
+					</div>
+					<div id='carousel' class='carousel slide' data-bs-ride='carousel'>
+						<div class='carousel-inner'>
+							<div class='carousel-item active'>
+								<div>
+									<h4>Ping Nihao</h4>
+
+									<img src='./images/1.png' class='d-inline-block mt-4' />
+									<p>
+										Ping is the youngest in the team. He doesn't like calling
+										coffee a mysterious act. He says, a good coffee is like a
+										mathematical formula. Once you figured it out, every coffee
+										you make is a masterpiece.
+									</p>
+								</div>
+							</div>
+
+							<div class='carousel-item'>
+								<div>
+									<h4>Max Selfish</h4>
+
+									<img src='./images/2.png' class='d-inline-block mt-4' />
+									<p>
+										Max is the austrian barista with years of experience from
+										the hotels across the whole Europe. "Venezuela coffee was a
+										lifhtening experience for me! I have never drink such an
+										amazing coffee!", he says.
+									</p>
+								</div>
+							</div>
+
+							<div class='carousel-item'>
+								<div>
+									<h4>Elizabeth Doherty</h4>
+									<img src='./images/3.png' class='d-inline-block mt-4' />
+
+									<p>
+										Experienced barista from Bahamas. She says that Venezuela
+										has opened eyes on coffee. "It's not about the taste", she
+										says. "It's all about the feelings".
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<button
+						class='carousel-control-prev'
+						type='button'
+						data-bs-target='#carousel'
+						data-bs-slide='prev'
+					>
+						<span class='carousel-control-prev-icon' aria-hidden='true'></span>
+					</button>
+					<button
+						class='carousel-control-next'
+						type='button'
+						data-bs-target='#carousel'
+						data-bs-slide='next'
+					>
+						<span class='carousel-control-next-icon' aria-hidden='true'></span>
 					</button>
 				</div>
 			</section>
-		</section>
-		<footer></footer>
+		</script>
+		<script id="template-contact-us-page" type="text/x-handlebars-template">
+			<section class='contact-us'>
+				<div class='contact'>
+					<div class='section-title col-12'>
+						<h2>CONTACT US</h2>
+					</div>
+					<div class='form col-12'>
+						<label for='name'>Name</label><br />
+						<input type='text' id='name' name='name' /><br />
+						<label for='title'>Title</label><br />
+						<input type='text' id='title' name='title' /><br />
+						<label for='message'>Message</label><br />
+						<input
+							class='text-area'
+							type='text'
+							id='message'
+							name='message'
+						/><br />
+						<button type='submit' value='submit'>SUBMIT</button>
+			</section>
+			<section class='about-us'>
+				<div class='about-us-container'>
+					<div class='about-us-title mt-4'>
+						<h2>ABOUT US</h2>
+					</div>
+					<div id='carousel' class='carousel slide' data-bs-ride='carousel'>
+						<div class='carousel-inner'>
+							<div class='carousel-item active'>
+								<div>
+									<h4>Ping Nihao</h4>
+
+									<img src='./images/1.png' class='d-inline-block mt-4' />
+									<p>
+										Ping is the youngest in the team. He doesn't like calling
+										coffee a mysterious act. He says, a good coffee is like a
+										mathematical formula. Once you figured it out, every coffee
+										you make is a masterpiece.
+									</p>
+								</div>
+							</div>
+
+							<div class='carousel-item'>
+								<div>
+									<h4>Max Selfish</h4>
+
+									<img src='./images/2.png' class='d-inline-block mt-4' />
+									<p>
+										Max is the austrian barista with years of experience from
+										the hotels across the whole Europe. "Venezuela coffee was a
+										lifhtening experience for me! I have never drink such an
+										amazing coffee!", he says.
+									</p>
+								</div>
+							</div>
+
+							<div class='carousel-item'>
+								<div>
+									<h4>Elizabeth Doherty</h4>
+									<img src='./images/3.png' class='d-inline-block mt-4' />
+
+									<p>
+										Experienced barista from Bahamas. She says that Venezuela
+										has opened eyes on coffee. "It's not about the taste", she
+										says. "It's all about the feelings".
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<button
+						class='carousel-control-prev'
+						type='button'
+						data-bs-target='#carousel'
+						data-bs-slide='prev'
+					>
+						<span class='carousel-control-prev-icon' aria-hidden='true'></span>
+					</button>
+					<button
+						class='carousel-control-next'
+						type='button'
+						data-bs-target='#carousel'
+						data-bs-slide='next'
+					>
+						<span class='carousel-control-next-icon' aria-hidden='true'></span>
+					</button>
+				</div>
+
+			</section>
+			<footer>
+				<div class='bottom-footer'>
+					<h6>® 2021 EL TIGRE Inc.</h6>
+				</div>
+			</footer>
+		</script>
 		<script
 			src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
 			integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"

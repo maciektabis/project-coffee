@@ -1,0 +1,37 @@
+.contact-us {
+	font-family: $font-main;
+	margin-top: 75px;
+}
+
+.form {
+	text-align: center;
+	margin-bottom: 50px;
+
+	label {
+		letter-spacing: 1px;
+		text-transform: uppercase;
+		font-weight: bold;
+	}
+
+	input {
+		width: 280px;
+		border: 2px solid;
+		margin: 10px;
+		padding: 2px;
+	}
+
+	.text-area {
+		height: 80px;
+	}
+
+	button {
+		background: $color-main;
+		border: none;
+		color: white;
+		text-align: center;
+		font-weight: bold;
+		padding: 15px 30px;
+		margin: 10px;
+		letter-spacing: 2px;
+	}
+}
