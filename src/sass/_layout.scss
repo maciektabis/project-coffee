@@ -243,26 +243,32 @@
 	position: relative;
 
 	.about-us-container {
-		max-width: 800px;
+		max-width: 1000px;
 		margin: 0 auto;
 		padding: 20px;
 	}
 }
 .carousel-item div {
 	display: flex;
-	padding: 50px;
+	padding: 80px;
 
 	img {
 		width: 200px;
 		height: 200px;
 		flex-shrink: 0;
-		display: block;
+		display: inline-flex;
 	}
-
+	h4 {
+		font-weight: $font-bold;
+		justify-content: center;
+		padding-top: 50px;
+		padding-right: 20px;
+	}
 	p {
-		flex-grow: 1;
-		padding: 70px;
+		display: flex;
 		font-size: 20px;
+		padding-top: 50px;
+		padding-left: 20px;
 	}
 }
 .carousel-control-prev {
