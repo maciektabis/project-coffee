@@ -56,18 +56,8 @@
 		font-size: 40px;
 		position: relative;
 		text-align: right;
-		margin-top: -70px;
 		padding-right: 130px;
 		font-weight: $font-semibold;
-	}
-	h1::after {
-		content: '';
-		display: block;
-		margin: 0 auto;
-		margin-top: 50px;
-		width: 400px;
-		height: 5px;
-		background-color: $color-main;
 	}
 }
 .header_discover {
@@ -78,6 +68,16 @@
 	font-size: 32px;
 	z-index: 2;
 }
+
 .icon-arrow {
 	font-size: 30px;
+}
+.header_subtitle::after {
+	content: '';
+	display: block;
+	margin: 0 auto;
+	margin-top: 50px;
+	width: 400px;
+	height: 5px;
+	background-color: $color-main;
 }
